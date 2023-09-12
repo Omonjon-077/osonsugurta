@@ -1,0 +1,84 @@
+@font-face {
+  font-family: 'omonjon-icons';
+  src:  url('../fonts/omonjon-icons.eot?4wbqcu');
+  src:  url('../fonts/omonjon-icons.eot?4wbqcu#iefix') format('embedded-opentype'),
+    url('../fonts/omonjon-icons.ttf?4wbqcu') format('truetype'),
+    url('../fonts/omonjon-icons.woff?4wbqcu') format('woff'),
+    url('../fonts/omonjon-icons.svg?4wbqcu#omonjon-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+i[class^="oson-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'omonjon-icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.oson-youtube:before {
+  content: "\e90c";
+}
+.oson-right-aqua:before {
+  content: "\e90d";
+  color: #1b9caa;
+}
+.oson-facebook:before {
+  content: "\e90f";
+}
+.oson-top:before {
+  content: "\e910";
+  color: #565973;
+}
+.oson-chevron-right:before {
+  content: "\e911";
+}
+.oson-chevron-left:before {
+  content: "\e912";
+}
+.oson-chevron-bottom:before {
+  content: "\e901";
+}
+.oson-twitter:before {
+  content: "\e913";
+}
+.oson-wallet:before {
+  content: "\e914";
+  color: #fe603e;
+}
+.oson-siren:before {
+  content: "\e915";
+  color: #fff;
+}
+.oson-shield:before {
+  content: "\e916";
+  color: #684cfe;
+}
+.oson-pay:before {
+  content: "\e917";
+  color: #1d52de;
+}
+.oson-help:before {
+  content: "\e918";
+  color: #fff;
+}
+.oson-headphone:before {
+  content: "\e919";
+  color: #fff;
+}
+.oson-card:before {
+  content: "\e900";
+  color: #fe9345;
+}
+.oson-instagram:before {
+  content: "\e902";
+}
