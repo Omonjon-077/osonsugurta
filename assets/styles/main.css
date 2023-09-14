@@ -103,12 +103,12 @@ button[aria-expanded^="true"] i {
     box-shadow: 0px 8px 18px -8px rgba(116, 246, 0, 0.90);
 }
 
-.bg-gray-light {
-    background-color: #1c2029 !important;
+.text-gray {
+    color: #565973;
 }
 
-.text-gray{
-    color: #565973;
+.bg-gray{
+    background: #EFF2FC;
 }
 
 .btn-secondary {
@@ -226,6 +226,7 @@ button {
     transition: var(--primary-transition);
     width: 6px;
 }
+
 .dropdown-arrow.show::after {
     transform: rotate(-135deg);
 }
@@ -239,15 +240,22 @@ button {
     background: #EF44441A;
 }
 
-.primary-hover:hover svg path{
+.primary-hover:hover svg path {
     fill: #EF4444 !important;
 }
 
 .form-control:focus,
-.form-select:focus{
+.form-select:focus {
     box-shadow: 0 0 0 0.25rem var(--bs-primary);
 }
 
+/* .form-select{
+    --bs-form-select-bg-img: none;
+} */
+
+.shadow-swiperBtn{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
 
 li,
 ul,
@@ -295,6 +303,375 @@ a {
     z-index: 10;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
+
+
+
+/* ==================== PROGRESS 1 | Omonjon ==================== */
+.progress {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    background: none;
+    margin: 0 auto;
+    box-shadow: none;
+    position: relative;
+}
+
+.progress:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 5px solid #f2f5f5;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.progress>span {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.progress .progress-left {
+    left: 0;
+}
+
+.progress .progress-bar {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-width: 5px;
+    border-style: solid;
+    position: absolute;
+    top: 0;
+}
+
+.progress .progress-left .progress-bar {
+    left: 100%;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-left: 0;
+    -webkit-transform-origin: center left;
+    transform-origin: center left;
+}
+
+.progress .progress-right {
+    right: 0;
+}
+
+.progress .progress-right .progress-bar {
+    left: -100%;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-right: 0;
+    -webkit-transform-origin: center right;
+    transform-origin: center right;
+    animation: loading-1 1.8s linear forwards;
+}
+
+.progress .progress-value {
+    width: 100%;
+    height: 100%;
+    font-size: 24px;
+    color: rgb(250, 245, 245);
+    text-align: center;
+    position: absolute;
+}
+
+.progress.blue .progress-bar {
+    border-color: #26abfd;
+}
+
+.progress.blue .progress-left .progress-bar {
+    animation: loading-2 1.5s linear forwards 1.8s;
+}
+
+@keyframes loading-1 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes loading-2 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(30deg);
+        transform: rotate(30deg);
+    }
+}
+
+/* ==================== PROGRESS 2 | Omonjon ==================== */
+.progress2 {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    background: none;
+    margin: 0 auto;
+    box-shadow: none;
+    position: relative;
+}
+
+.progress2:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 5px solid #f2f5f5;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.progress2>span {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.progress2 .progress-left {
+    left: 0;
+}
+
+.progress2 .progress-bar {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-width: 5px;
+    border-style: solid;
+    position: absolute;
+    top: 0;
+}
+
+.progress2 .progress-left .progress-bar {
+    left: 100%;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-left: 0;
+    -webkit-transform-origin: center left;
+    transform-origin: center left;
+}
+
+.progress2 .progress-right {
+    right: 0;
+}
+
+.progress2 .progress-right .progress-bar {
+    left: -100%;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-right: 0;
+    -webkit-transform-origin: center right;
+    transform-origin: center right;
+    animation: loading-1-3 1.8s linear forwards;
+}
+
+.progress2 .progress-value {
+    width: 100%;
+    height: 100%;
+    font-size: 24px;
+    color: rgb(250, 245, 245);
+    text-align: center;
+    position: absolute;
+}
+
+.progress2.blue .progress-bar {
+    border-color: #26abfd;
+}
+
+.progress2.blue .progress-left .progress-bar {
+    animation: loading-2-2 1.5s linear forwards 1.8s;
+}
+
+@keyframes loading-1-2 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(100deg);
+        transform: rotate(100deg);
+    }
+}
+
+@keyframes loading-2-2 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+/* ==================== PROGRESS 3 | Omonjon ==================== */
+.progress3 {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    background: none;
+    margin: 0 auto;
+    box-shadow: none;
+    position: relative;
+}
+
+.progress3:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 5px solid #f2f5f5;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.progress3>span {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.progress3 .progress-left {
+    left: 0;
+}
+
+.progress3 .progress-bar {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-width: 5px;
+    border-style: solid;
+    position: absolute;
+    top: 0;
+}
+
+.progress3 .progress-left .progress-bar {
+    left: 100%;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-left: 0;
+    -webkit-transform-origin: center left;
+    transform-origin: center left;
+}
+
+.progress3 .progress-right {
+    right: 0;
+}
+
+.progress3 .progress-right .progress-bar {
+    left: -100%;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-right: 0;
+    -webkit-transform-origin: center right;
+    transform-origin: center right;
+    animation: loading-1-2 1.8s linear forwards;
+}
+
+.progress3 .progress-value {
+    width: 100%;
+    height: 100%;
+    font-size: 24px;
+    color: rgb(250, 245, 245);
+    text-align: center;
+    position: absolute;
+}
+
+.progress3.blue .progress-bar {
+    border-color: #26abfd;
+}
+
+.progress3.blue .progress-left .progress-bar {
+    animation: loading-2-3 1.5s linear forwards 1.8s;
+}
+
+@keyframes loading-1-3 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(145deg);
+        transform: rotate(145deg);
+    }
+}
+
+@keyframes loading-2-3 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+/* ==================== HOW WORKS | Omonjon ==================== */
+.how-works .swiper-slide {
+    margin-bottom: 4rem;
+}
+
+.how-works .swiper-button-next::after,
+.how-works .swiper-button-prev::after {
+    content: '';
+}
+
+.how-works .swiper-button-prev,
+.how-works .swiper-button-next {
+    font-size: 2rem;
+    color: var(--text-color);
+    width: initial;
+    height: initial;
+    top: initial;
+    bottom: 0.5rem;
+}
+
+.how-works .swiper-button-prev {
+    left: 10px;
+}
+
+.how-works .swiper-button-next {
+    right: calc(85% - 3rem);
+}
+
+.how-works .swiper-button-disabled {
+    opacity: initial;
+}
+
+/* ==================== PARTNERS | Omonjon ==================== */
+.partner-wh {
+    width: 140px !important;
+    height: 30px;
+}
+
+
 
 /*=============== SCROLL BAR | Omonjon ===============*/
 ::-webkit-scrollbar {

@@ -53,6 +53,10 @@
     .scroll_up {
         right: 1rem;
     }
+
+    .ins-price {
+        font-size: 16px !important;
+    }
 }
 
 @media (max-width: 575px) {
@@ -67,5 +71,21 @@
 
     .scrollup {
         right: 1rem;
+    }
+
+    .ins-top h4,
+    .ins-top a,
+    .ins-top a i{
+        font-size: 14px !important;
+    }
+
+    .how-works .swiper-button-next {
+        right: calc(75% - 3rem);
+    }
+}
+
+@media (max-width: 390px) {
+    .ins-img {
+        width: 120px;
     }
 }
