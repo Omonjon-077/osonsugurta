@@ -59,6 +59,9 @@ i[class^="oson-"] {
   content: "\e915";
   color: #fff;
 }
+.oson-crown:before {
+  content: "\e900";
+}
 .oson-shield:before {
   content: "\e916";
   color: #684cfe;
