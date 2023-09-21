@@ -47,7 +47,13 @@
     .border-max-lg-bottom {
         border-bottom: 1px solid var(--bs-white) !important;
     }
+
+    .servicesModal-icon {
+        top: -70px;
+        right: 165px;
+    }
 }
+
 /* ============ desktop view .end// ============ */
 @media (max-width: 767px) {
     .scroll_up {
@@ -56,6 +62,11 @@
 
     .ins-price {
         font-size: 16px !important;
+    }
+
+    .servicesModal-icon {
+        top: -50px;
+        right: 180px;
     }
 }
 
@@ -69,13 +80,19 @@
         height: 400px;
     }
 
+    .servicesModal-icon {
+        top: -50px;
+        right: auto;
+        left: auto;
+    }
+
     .scrollup {
         right: 1rem;
     }
 
     .ins-top h4,
     .ins-top a,
-    .ins-top a i{
+    .ins-top a i {
         font-size: 14px !important;
     }
 

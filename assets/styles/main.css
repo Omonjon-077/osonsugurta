@@ -260,6 +260,12 @@ button {
     box-shadow: 0 0 0 0.25rem var(--bs-primary);
 }
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 /* .form-select{
     --bs-form-select-bg-img: none;
 } */
@@ -303,6 +309,12 @@ a {
     max-width: 500px;
     width: 100%;
     height: 100%;
+}
+
+/* ==================== SERVICES in ITEM MODAL | Omonjon ==================== */
+.servicesModal-icon{
+    top: -70px;
+    right: 165px;
 }
 
 /* ==================== HEADER | Omonjon ==================== */
