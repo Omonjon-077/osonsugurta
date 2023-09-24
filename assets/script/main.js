@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', function (eventObject) {
 })
 window.addEventListener("load", function (eventObject) {
     $('.load').fadeOut("slow");
-
 });
 
 /*=============== HEADER FIXED ===============*/
