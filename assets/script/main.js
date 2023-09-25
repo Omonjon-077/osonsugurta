@@ -22,7 +22,8 @@ if ($("#myHeader").length) {
             header.classList.remove("sticky");
         }
     }
-};
+}
+;
 
 /*=============== SWIPER | HOW WORKS ===============*/
 if ($(".howWorks").length) {
@@ -37,7 +38,8 @@ if ($(".howWorks").length) {
         },
         keyboard: true,
     });
-};
+}
+;
 
 /*=============== SWIPER | PARTNERS ===============*/
 if ($(".partnerSwiper").length) {

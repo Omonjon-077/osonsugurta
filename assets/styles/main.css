@@ -111,14 +111,14 @@ button[aria-expanded^="true"] i {
 }
 
 .primary-shadow {
-    box-shadow: 0px 8px 18px -8px rgba(116, 246, 0, 0.90);
+    box-shadow: 0px 4px 9px -1px rgba(19, 16, 34, 0.03), 0px 4.4px 20px -1px rgba(19, 16, 34, 0.05);
 }
 
 .text-gray {
     color: #565973;
 }
 
-.bg-gray{
+.bg-gray {
     background: #EFF2FC;
 }
 
@@ -270,7 +270,7 @@ input[type=number]::-webkit-outer-spin-button {
     --bs-form-select-bg-img: none;
 } */
 
-.shadow-swiperBtn{
+.shadow-swiperBtn {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
@@ -312,7 +312,7 @@ a {
 }
 
 /* ==================== SERVICES in ITEM MODAL | Omonjon ==================== */
-.servicesModal-icon{
+.servicesModal-icon {
     top: -70px;
     right: 165px;
 }
@@ -326,7 +326,6 @@ a {
     z-index: 10;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
-
 
 
 /* ==================== PROGRESS 1 | Omonjon ==================== */
@@ -351,7 +350,7 @@ a {
     left: 0;
 }
 
-.progress>span {
+.progress > span {
     width: 50%;
     height: 100%;
     overflow: hidden;
@@ -460,7 +459,7 @@ a {
     left: 0;
 }
 
-.progress2>span {
+.progress2 > span {
     width: 50%;
     height: 100%;
     overflow: hidden;
@@ -569,7 +568,7 @@ a {
     left: 0;
 }
 
-.progress3>span {
+.progress3 > span {
     width: 50%;
     height: 100%;
     overflow: hidden;
@@ -693,7 +692,6 @@ a {
     width: 140px !important;
     height: 30px;
 }
-
 
 
 /*=============== SCROLL BAR | Omonjon ===============*/
