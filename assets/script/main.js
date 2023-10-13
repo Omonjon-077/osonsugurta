@@ -97,4 +97,12 @@ const scrollUp = () => {
     this.scrollY >= 300 ? scrollUp.classList.add('show-scroll')
         : scrollUp.classList.remove('show-scroll')
 }
-window.addEventListener('scroll', scrollUp)
+window.addEventListener('scroll', scrollUp);
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const progressBar = document.querySelector('.progress-bar');
+    const numSteps = progressBar.children.length;
+    progressBar.style.setProperty('--num-steps', numSteps);
+});

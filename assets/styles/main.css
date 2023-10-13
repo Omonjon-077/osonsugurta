@@ -39,6 +39,17 @@ body {
     color: var(--text-color-light) !important;
 }
 
+.no-select {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+    cursor: default;
+}
+
 .w-26 {
     width: 26%;
 }
@@ -327,13 +338,90 @@ a {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
-.details .line-self{
+.progress-bar {
+    display: grid; /* The progress-bar uses CSS Grid to layout the steps contained within */
+    grid-template-columns: repeat(var(--num-steps, 4), minmax(max-content, 1fr)); /* Using max-content makes the column as wide as the content of its widest child. */
+    position: relative;
+    align-items: end;
+}
+
+.step {
+    text-align: center;
+    position: relative;
+    padding: 0 4px;
+    min-width: 100px; /* The min-width ensures a minimum comfortable space for each label */
+}
+
+.label {
+    display: block;
+    color: var(--bs-gray);
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.step.active .label {
+    color: var(--bs-primary);
+}
+
+.step.complete .label {
+    color: var(--bs-primary);
+}
+
+.icon {
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: #ffffff;
+    border: 2px solid #b3b5b9;
+    border-radius: 50%;
+    margin: 4px auto 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.step.active .icon {
+    background: var(--bs-primary);
+    border: 2px solid var(--bs-primary);
+}
+
+.step.complete .icon {
+    background: var(--bs-primary);
+    border: 2px solid var(--bs-primary);
+}
+
+.line {
+    height: 2px;
+    width: 100%;
+    background-color: var(--bs-gray);
+    position: absolute;
+    top: 25px;
+    left: -50%;
+    right: -2px;
+    z-index: 1;
+}
+
+.step.active .line {
+    background-color: var(--bs-primary);
+}
+
+.step.complete .line {
+    background-color: var(--bs-primary);
+}
+
+.step:first-child .line {
+    display: none;
+}
+
+.details .line-self {
     background: url("../images/line-top-1.png") no-repeat center/cover;
     width: 100%;
     height: 31px;
 }
 
-.payment .line-self{
+.payment .line-self {
     background: url("../images/line-top-2.png") no-repeat center/cover;
     width: 100%;
     height: 31px;
